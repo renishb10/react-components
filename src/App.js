@@ -1,24 +1,33 @@
 import './App.css';
-import Button from './Button';
+import Accordion from './components/Accordion';
+
 
 function App() {
+  const items = [
+    {
+      id: 123,
+      label: 'Hello world how are you?',
+      content: "Lorem ipsum dolor sit amet consectetur fugit odit ea odio nihil. Dolores harum minima inventore? Non!"
+    },
+    {
+      id: 234,
+      label: 'Hello world how are you?',
+      content: "Lorem ipsum dolor sit amet consectetur fugit odit ea odio nihil. Dolores harum minima inventore? Non!"
+    },
+    {
+      id: 334,
+      label: 'Hello world how are you?',
+      content: "Lorem ipsum dolor sit amet consectetur fugit odit ea odio nihil. Dolores harum minima inventore? Non!"
+    },
+    {
+      id: 344,
+      label: 'Hello world how are you?',
+      content: "Lorem ipsum dolor sit amet consectetur fugit odit ea odio nihil. Dolores harum minima inventore? Non!"
+    }
+  ]
   return (
     <div className="App">
-      <div>
-        <Button success rounded outline>Click me!</Button>
-      </div>
-      <div>
-        <Button danger outline>Buy Now!</Button>
-      </div>
-      <div>
-        <Button warning>See Deal!</Button>
-      </div>
-      <div>
-        <Button secondary outline>Hide Ads!</Button>
-      </div>
-      <div>
-        <Button primary rounded>Something!</Button>
-      </div>
+      <Accordion items={items} />
     </div>
   );
 }
