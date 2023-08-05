@@ -1,4 +1,3 @@
-import './App.css';
 import Button from '../components/Button';
 import { GoDeviceDesktop, GoCodeOfConduct } from 'react-icons/go'
 
